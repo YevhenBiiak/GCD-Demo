@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ImageViewController.swift
 //  GCD Demo
 //
 //  Created by Евгений Бияк on 14.10.2022.
@@ -7,17 +7,19 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ImageViewController: UIViewController {
+    
+    let imageView = UIImageView()
     
     let imgURL = URL(string: "https://wallpapershome.ru/images/wallpapers/raduga-2160x3840-4k-5k-8k-lepestki-stranici-cvetnie-fon-261.jpg")!
-    var imageView = UIImageView()
+    var isAsyncLoad = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Second"
+        title = "Image ViewController"
         view.backgroundColor = .secondarySystemBackground
         
-        loadImageAsync()
+        isAsyncLoad ? loadImageAsync() : loadImage()
     }
     
     override func viewWillAppear(_ animated: Bool) {

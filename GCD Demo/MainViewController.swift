@@ -9,34 +9,52 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var button = UIButton()
+    let syncLoadButton = UIButton()
+    let asyncLoadButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main"
         view.backgroundColor = .secondarySystemBackground
         
-        button.addTarget(nil, action: #selector(action), for: .touchUpInside)
+        syncLoadButton.addTarget(nil, action: #selector(actionButton1), for: .touchUpInside)
+        asyncLoadButton.addTarget(nil, action: #selector(actionButton2), for: .touchUpInside)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        initButton()
+        initSyncLoadButton()
+        initAsyncLoadButton()
     }
     
-    @objc func action() {
-        let secondVC = SecondViewController()
-        navigationController?.pushViewController(secondVC, animated: true)
+    @objc func actionButton1() {
+        let imageVC = ImageViewController()
+        imageVC.isAsyncLoad = false
+        navigationController?.pushViewController(imageVC, animated: true)
     }
     
-    private func initButton() {
-        button.frame = CGRect(x: 0, y: 0, width: 200, height: 44)
-        button.center = view.center
-        button.setTitle("Press me", for: .normal)
-        button.backgroundColor = .black
-        button.layer.cornerRadius = 10
-        view.addSubview(button)
+    @objc func actionButton2() {
+        let imageVC = ImageViewController()
+        imageVC.isAsyncLoad = true
+        navigationController?.pushViewController(imageVC, animated: true)
     }
-
+    
+    private func initSyncLoadButton() {
+        syncLoadButton.frame = CGRect(x: 0, y: 0, width: 200, height: 44)
+        syncLoadButton.center = CGPoint(x: view.center.x, y: view.center.y - 50)
+        syncLoadButton.setTitle("load image sync", for: .normal)
+        syncLoadButton.backgroundColor = .black
+        syncLoadButton.layer.cornerRadius = 10
+        view.addSubview(syncLoadButton)
+    }
+    
+    private func initAsyncLoadButton() {
+        asyncLoadButton.frame = CGRect(x: 0, y: 0, width: 200, height: 44)
+        asyncLoadButton.center = CGPoint(x: view.center.x, y: view.center.y + 50)
+        asyncLoadButton.setTitle("load image async", for: .normal)
+        asyncLoadButton.backgroundColor = .black
+        asyncLoadButton.layer.cornerRadius = 10
+        view.addSubview(asyncLoadButton)
+    }
 }
 

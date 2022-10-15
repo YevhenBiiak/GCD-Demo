@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		578035DB28F9D1CC001F2F0D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578035DA28F9D1CC001F2F0D /* SecondViewController.swift */; };
+		578035DB28F9D1CC001F2F0D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578035DA28F9D1CC001F2F0D /* ImageViewController.swift */; };
 		57E04D9228F9D03A00F18EF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E04D9128F9D03A00F18EF7 /* AppDelegate.swift */; };
 		57E04D9428F9D03A00F18EF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E04D9328F9D03A00F18EF7 /* SceneDelegate.swift */; };
 		57E04D9628F9D03A00F18EF7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E04D9528F9D03A00F18EF7 /* MainViewController.swift */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		578035DA28F9D1CC001F2F0D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		578035DA28F9D1CC001F2F0D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		57E04D8E28F9D03A00F18EF7 /* GCD Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GCD Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E04D9128F9D03A00F18EF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57E04D9328F9D03A00F18EF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				57E04D9128F9D03A00F18EF7 /* AppDelegate.swift */,
 				57E04D9328F9D03A00F18EF7 /* SceneDelegate.swift */,
 				57E04D9528F9D03A00F18EF7 /* MainViewController.swift */,
-				578035DA28F9D1CC001F2F0D /* SecondViewController.swift */,
+				578035DA28F9D1CC001F2F0D /* ImageViewController.swift */,
 				57E04D9A28F9D03C00F18EF7 /* Assets.xcassets */,
 				57E04D9C28F9D03C00F18EF7 /* LaunchScreen.storyboard */,
 				57E04D9F28F9D03C00F18EF7 /* Info.plist */,
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578035DB28F9D1CC001F2F0D /* SecondViewController.swift in Sources */,
+				578035DB28F9D1CC001F2F0D /* ImageViewController.swift in Sources */,
 				57E04D9628F9D03A00F18EF7 /* MainViewController.swift in Sources */,
 				57E04D9228F9D03A00F18EF7 /* AppDelegate.swift in Sources */,
 				57E04D9428F9D03A00F18EF7 /* SceneDelegate.swift in Sources */,
