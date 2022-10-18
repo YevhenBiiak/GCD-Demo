@@ -33,9 +33,11 @@ class ImageViewController: UIViewController {
     
     private func initImageView() {
         imageView.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
-        imageView.backgroundColor = .yellow
         imageView.center = view.center
         imageView.layer.cornerRadius = 10
+        imageView.layer.borderColor = UIColor.gray.cgColor
+        imageView.layer.borderWidth = 1.0
+        imageView.clipsToBounds = true
         view.addSubview(imageView)
     }
     

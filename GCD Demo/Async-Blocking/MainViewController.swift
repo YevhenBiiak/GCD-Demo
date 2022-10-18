@@ -14,7 +14,6 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Main"
         view.backgroundColor = .secondarySystemBackground
         
         syncLoadButton.addTarget(nil, action: #selector(actionButton1), for: .touchUpInside)

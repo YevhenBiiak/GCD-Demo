@@ -17,9 +17,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let viewController = MainViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.title = "Async/Blocking"
+        
+        let viewController2 = Main2ViewController()
+        let navigationController2 = UINavigationController(rootViewController: viewController2)
+        navigationController2.title = "After/Concurrent"
+        
+        let tabBar = UITabBarController()
+        tabBar.setViewControllers(
+            [navigationController, navigationController2],
+            animated: false)
         
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = navigationController
+        window?.rootViewController = tabBar
         window?.makeKeyAndVisible()
     }
 
