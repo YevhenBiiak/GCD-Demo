@@ -23,9 +23,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController2 = UINavigationController(rootViewController: viewController2)
         navigationController2.title = "After/Concurrent"
         
+        let viewController3 = Main3ViewController()
+        let navigationController3 = UINavigationController(rootViewController: viewController3)
+        navigationController3.title = "WorkItem"
+        
         let tabBar = UITabBarController()
         tabBar.setViewControllers(
-            [navigationController, navigationController2],
+            [navigationController,
+             navigationController2,
+             navigationController3
+            ],
             animated: false)
         
         window = UIWindow(windowScene: windowScene)

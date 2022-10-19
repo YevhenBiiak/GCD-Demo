@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		575C5BAC28FF199300BE496A /* Main3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C5BAB28FF199300BE496A /* Main3ViewController.swift */; };
+		575C5BAE28FF274900BE496A /* ImageDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C5BAD28FF274900BE496A /* ImageDemoViewController.swift */; };
+		575C5BB028FF287D00BE496A /* DispatchWorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C5BAF28FF287C00BE496A /* DispatchWorkItem.swift */; };
+		575C5BB228FF28D200BE496A /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575C5BB128FF28D200BE496A /* ImageFetcher.swift */; };
 		578035DB28F9D1CC001F2F0D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578035DA28F9D1CC001F2F0D /* ImageViewController.swift */; };
 		578035DF28FEA4A7001F2F0D /* Main2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578035DE28FEA4A7001F2F0D /* Main2ViewController.swift */; };
 		578035E128FEADDF001F2F0D /* ConcurrentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578035E028FEADDF001F2F0D /* ConcurrentViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		575C5BAB28FF199300BE496A /* Main3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main3ViewController.swift; sourceTree = "<group>"; };
+		575C5BAD28FF274900BE496A /* ImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemoViewController.swift; sourceTree = "<group>"; };
+		575C5BAF28FF287C00BE496A /* DispatchWorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItem.swift; sourceTree = "<group>"; };
+		575C5BB128FF28D200BE496A /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		578035DA28F9D1CC001F2F0D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		578035DE28FEA4A7001F2F0D /* Main2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
 		578035E028FEADDF001F2F0D /* ConcurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575C5BAA28FF18DC00BE496A /* WorkItem */ = {
+			isa = PBXGroup;
+			children = (
+				575C5BB128FF28D200BE496A /* ImageFetcher.swift */,
+				575C5BAF28FF287C00BE496A /* DispatchWorkItem.swift */,
+				575C5BAB28FF199300BE496A /* Main3ViewController.swift */,
+				575C5BAD28FF274900BE496A /* ImageDemoViewController.swift */,
+			);
+			path = WorkItem;
+			sourceTree = "<group>";
+		};
 		578035DC28FEA40E001F2F0D /* Async-Blocking */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,13 +69,13 @@
 			path = "Async-Blocking";
 			sourceTree = "<group>";
 		};
-		578035DD28FEA429001F2F0D /* After-Concurrent */ = {
+		578035DD28FEA429001F2F0D /* AsyncAfter-Concurrent */ = {
 			isa = PBXGroup;
 			children = (
 				578035DE28FEA4A7001F2F0D /* Main2ViewController.swift */,
 				578035E028FEADDF001F2F0D /* ConcurrentViewController.swift */,
 			);
-			path = "After-Concurrent";
+			path = "AsyncAfter-Concurrent";
 			sourceTree = "<group>";
 		};
 		57E04D8528F9D03A00F18EF7 = {
@@ -81,7 +100,8 @@
 				57E04D9128F9D03A00F18EF7 /* AppDelegate.swift */,
 				57E04D9328F9D03A00F18EF7 /* SceneDelegate.swift */,
 				578035DC28FEA40E001F2F0D /* Async-Blocking */,
-				578035DD28FEA429001F2F0D /* After-Concurrent */,
+				578035DD28FEA429001F2F0D /* AsyncAfter-Concurrent */,
+				575C5BAA28FF18DC00BE496A /* WorkItem */,
 				57E04D9A28F9D03C00F18EF7 /* Assets.xcassets */,
 				57E04D9C28F9D03C00F18EF7 /* LaunchScreen.storyboard */,
 				57E04D9F28F9D03C00F18EF7 /* Info.plist */,
@@ -159,12 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				575C5BB028FF287D00BE496A /* DispatchWorkItem.swift in Sources */,
+				575C5BAC28FF199300BE496A /* Main3ViewController.swift in Sources */,
+				575C5BAE28FF274900BE496A /* ImageDemoViewController.swift in Sources */,
 				578035DB28F9D1CC001F2F0D /* ImageViewController.swift in Sources */,
 				578035E128FEADDF001F2F0D /* ConcurrentViewController.swift in Sources */,
 				578035DF28FEA4A7001F2F0D /* Main2ViewController.swift in Sources */,
 				57E04D9628F9D03A00F18EF7 /* MainViewController.swift in Sources */,
 				57E04D9228F9D03A00F18EF7 /* AppDelegate.swift in Sources */,
 				57E04D9428F9D03A00F18EF7 /* SceneDelegate.swift in Sources */,
+				575C5BB228FF28D200BE496A /* ImageFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

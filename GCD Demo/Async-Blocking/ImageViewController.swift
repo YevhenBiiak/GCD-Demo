@@ -11,7 +11,7 @@ class ImageViewController: UIViewController {
     
     let imageView = UIImageView()
     
-    let imgURL = URL(string: "https://wallpapershome.ru/images/wallpapers/raduga-2160x3840-4k-5k-8k-lepestki-stranici-cvetnie-fon-261.jpg")!
+    private let imgURL = URL(string: "https://wallpapershome.ru/images/wallpapers/raduga-2160x3840-4k-5k-8k-lepestki-stranici-cvetnie-fon-261.jpg")!
     var isAsyncLoad = true
     
     override func viewDidLoad() {
