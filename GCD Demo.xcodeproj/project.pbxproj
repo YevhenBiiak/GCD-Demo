@@ -26,6 +26,18 @@
 		575C5BAD28FF274900BE496A /* ImageDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDemoViewController.swift; sourceTree = "<group>"; };
 		575C5BAF28FF287C00BE496A /* DispatchWorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchWorkItem.swift; sourceTree = "<group>"; };
 		575C5BB128FF28D200BE496A /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
+		575C5BB429019F3100BE496A /* lesson 13 Barrier.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 13 Barrier.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BB529019F3100BE496A /* lesson 11 Semaphore.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 11 Semaphore.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BB629019F3200BE496A /* lesson 15 OperationQueue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 15 OperationQueue.playground"; sourceTree = "<group>"; };
+		575C5BB729019F3200BE496A /* lesson 14 DispatchSource.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 14 DispatchSource.playground"; sourceTree = "<group>"; };
+		575C5BB829019F3200BE496A /* lesson 12 DispatchGroup.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 12 DispatchGroup.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BB92901A0E300BE496A /* lesson 6 Lock.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 6 Lock.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBA2901A0E300BE496A /* lesson 7 Queue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 7 Queue.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBB2901A0E300BE496A /* lesson 5 Condition.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 5 Condition.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBC2901A0E300BE496A /* lesson 2 QOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 2 QOS.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBD2901A0E300BE496A /* lesson 3 Mutex.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 3 Mutex.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBE2901A0E300BE496A /* lesson 1 Thread.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 1 Thread.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		575C5BBF2901A0E300BE496A /* lesson 4 RecutsiveLock.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "lesson 4 RecutsiveLock.playground"; sourceTree = "<group>"; };
 		578035DA28F9D1CC001F2F0D /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		578035DE28FEA4A7001F2F0D /* Main2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main2ViewController.swift; sourceTree = "<group>"; };
 		578035E028FEADDF001F2F0D /* ConcurrentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,25 @@
 				575C5BAD28FF274900BE496A /* ImageDemoViewController.swift */,
 			);
 			path = WorkItem;
+			sourceTree = "<group>";
+		};
+		575C5BB329019F0E00BE496A /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				575C5BBE2901A0E300BE496A /* lesson 1 Thread.playground */,
+				575C5BBC2901A0E300BE496A /* lesson 2 QOS.playground */,
+				575C5BBD2901A0E300BE496A /* lesson 3 Mutex.playground */,
+				575C5BBF2901A0E300BE496A /* lesson 4 RecutsiveLock.playground */,
+				575C5BBB2901A0E300BE496A /* lesson 5 Condition.playground */,
+				575C5BB92901A0E300BE496A /* lesson 6 Lock.playground */,
+				575C5BBA2901A0E300BE496A /* lesson 7 Queue.playground */,
+				575C5BB529019F3100BE496A /* lesson 11 Semaphore.playground */,
+				575C5BB829019F3200BE496A /* lesson 12 DispatchGroup.playground */,
+				575C5BB429019F3100BE496A /* lesson 13 Barrier.playground */,
+				575C5BB729019F3200BE496A /* lesson 14 DispatchSource.playground */,
+				575C5BB629019F3200BE496A /* lesson 15 OperationQueue.playground */,
+			);
+			path = Playground;
 			sourceTree = "<group>";
 		};
 		578035DC28FEA40E001F2F0D /* Async-Blocking */ = {
@@ -102,6 +133,7 @@
 				578035DC28FEA40E001F2F0D /* Async-Blocking */,
 				578035DD28FEA429001F2F0D /* AsyncAfter-Concurrent */,
 				575C5BAA28FF18DC00BE496A /* WorkItem */,
+				575C5BB329019F0E00BE496A /* Playground */,
 				57E04D9A28F9D03C00F18EF7 /* Assets.xcassets */,
 				57E04D9C28F9D03C00F18EF7 /* LaunchScreen.storyboard */,
 				57E04D9F28F9D03C00F18EF7 /* Info.plist */,
